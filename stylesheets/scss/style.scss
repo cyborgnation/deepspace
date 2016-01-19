@@ -1,2 +1,26 @@
+//
+// IMPORTS
+//
 @import "bourbon/bourbon";
 @import "neat/neat";
+
+// Font Import
+@import url(https://fonts.googleapis.com/css?family=Exo+2);
+
+//
+// VARIABLES
+//
+$exo: 'Exo 2', sans-serif;
+
+//
+// DEFAULTS
+// 
+
+.body{
+  font-family: $exo
+  color: black;
+}
+
+//
+// MENU
+//
