@@ -14,13 +14,41 @@ $exo: 'Exo 2', sans-serif;
 
 //
 // DEFAULTS
-// 
+//
 
 .body{
-  font-family: $exo
+  font-family: $exo;
   color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+
 }
 
 //
 // MENU
+//
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 190px;
+}
+
+li {
+    float: right;
+    display: block;
+    padding: 50px 10px 10px 0px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+//
+// GRID
 //
