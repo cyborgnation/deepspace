@@ -16,7 +16,7 @@ $exo: 'Exo 2', sans-serif;
 // DEFAULTS
 //
 
-.body{
+body {
   font-family: $exo;
   color: black;
 }
@@ -28,27 +28,47 @@ a {
 }
 
 //
-// MENU
+// HEADER
 //
 
-ul {
+header {
+  @include outer-container(100%);
+  background-color: #1E2327;
+  height: 80px;
+
+  .header-logo {
+    @include span-columns(6);
+    height: 100%;
+
+    .logo {
+      width: 142px;
+      height: 100%;
+      display: block;
+      background-image: url("../assets/img/logo-text.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 10%;
+      float: left;
+    }
+
+  }
+  .header-links {
+    @include span-columns(6);
+    height: 100%;
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    background-color: black;
-    height: 190px;
-}
+    margin: 0;
 
-li {
-    float: right;
-    display: block;
-    padding: 50px 10px 10px 0px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    li {
+      color: white;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      float: right;
+      padding: 50px 10px 10px 0px;
+    }
+  }
 }
-
 //
 // GRID
 //

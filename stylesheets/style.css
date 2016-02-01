@@ -5,7 +5,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.body {
+body {
   font-family: "Exo 2", sans-serif;
   color: black; }
 
@@ -13,20 +13,50 @@ a {
   text-decoration: none;
   color: white; }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: black;
+header {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1E2327;
   height: 80px; }
-
-li {
-  float: right;
-  display: block;
-  padding: 8px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none; }
+  header::after {
+    clear: both;
+    content: "";
+    display: table; }
+  header .header-logo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    height: 100%; }
+    header .header-logo:last-child {
+      margin-right: 0; }
+    header .header-logo .logo {
+      width: 142px;
+      height: 100%;
+      display: block;
+      background-image: url("../assets/img/logo-text.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 10%;
+      float: left; }
+  header .header-links {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    header .header-links:last-child {
+      margin-right: 0; }
+    header .header-links li {
+      color: white;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      float: right;
+      padding: 50px 10px 10px 0px; }
 
 /*# sourceMappingURL=style.css.map */
